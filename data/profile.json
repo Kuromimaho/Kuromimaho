@@ -1,0 +1,24 @@
+{
+    "name": "Adam",
+    "title": "Web Enthusiast • Cyclist • Creator",
+
+    "description": "Welcome to my personal dashboard. This website contains my personal websites, projects, and future experiments.",
+
+    "websites": [
+        {
+            "name": "Kuromimaho",
+            "url": "https://kuromimaho.web.id",
+            "description": "Main personal website."
+        },
+        {
+            "name": "Kuromaho",
+            "url": "https://kuromaho.web.id",
+            "description": "Creative experiments and ideas."
+        },
+        {
+            "name": "Kuromiho",
+            "url": "https://kuromiho.web.id",
+            "description": "Additional web projects."
+        }
+    ]
+}
