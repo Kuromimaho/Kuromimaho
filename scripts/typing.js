@@ -4,30 +4,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!element) return;
 
-    const text = element.textContent.trim();
+    setTimeout(() => {
 
-    let index = 0;
+        const text = element.textContent.trim();
 
-    function type() {
+        element.textContent = "";
 
-        if (index === 0) {
+        let index = 0;
 
-            element.textContent = "";
+        function type() {
+
+            if (index < text.length) {
+
+                element.textContent += text.charAt(index);
+
+                index++;
+
+                setTimeout(type, 120);
+
+            }
 
         }
 
-        if (index < text.length) {
+        type();
 
-            element.textContent += text.charAt(index);
-
-            index++;
-
-            setTimeout(type, 120);
-
-        }
-
-    }
-
-    type();
+    }, 200);
 
 });
