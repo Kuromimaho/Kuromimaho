@@ -1,0 +1,151 @@
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:24px;
+
+    background:var(--background);
+
+    z-index:9999;
+
+    transition:
+
+        opacity .6s ease,
+        visibility .6s ease;
+
+}
+
+#loader.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+}
+
+.loader-logo{
+
+    font-size:2.5rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    letter-spacing:1px;
+
+    animation:pulse 1.5s ease-in-out infinite;
+
+}
+
+.loader-ring{
+
+    width:72px;
+
+    height:72px;
+
+    border:6px solid rgba(255,255,255,.12);
+
+    border-top:6px solid var(--primary);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+.loader-text{
+
+    color:var(--text-secondary);
+
+    font-size:.95rem;
+
+    letter-spacing:.5px;
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+        opacity:.75;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+body.loading{
+
+    overflow:hidden;
+
+}
+
+@media (max-width:768px){
+
+    .loader-logo{
+
+        font-size:2rem;
+
+    }
+
+    .loader-ring{
+
+        width:60px;
+
+        height:60px;
+
+        border-width:5px;
+
+    }
+
+    .loader-text{
+
+        font-size:.9rem;
+
+    }
+
+}

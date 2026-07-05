@@ -1,0 +1,198 @@
+/* =========================================
+   Large Devices
+========================================= */
+
+@media (max-width:1200px){
+
+    section{
+
+        padding:88px 32px;
+
+    }
+
+}
+
+/* =========================================
+   Tablets
+========================================= */
+
+@media (max-width:992px){
+
+    .header{
+
+        padding:16px 24px;
+
+    }
+
+    .header nav{
+
+        gap:20px;
+
+    }
+
+    .hero h1{
+
+        font-size:3.5rem;
+
+    }
+
+    .hero h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .card-grid{
+
+        grid-template-columns:
+            repeat(auto-fit,minmax(240px,1fr));
+
+    }
+
+}
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media (max-width:768px){
+
+    section{
+
+        padding:72px 20px;
+
+    }
+
+    .header{
+
+        flex-direction:column;
+
+        gap:18px;
+
+    }
+
+    .header nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:14px;
+
+    }
+
+    .hero{
+
+        padding-top:160px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .hero h2{
+
+        font-size:1.2rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    .hero-actions{
+
+        flex-direction:column;
+
+        width:100%;
+
+        align-items:center;
+
+    }
+
+    .hero-actions .btn{
+
+        width:100%;
+
+        max-width:320px;
+
+    }
+
+    .live-card{
+
+        width:100%;
+
+    }
+
+    .card-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-links{
+
+        flex-direction:column;
+
+        gap:14px;
+
+    }
+
+}
+
+/* =========================================
+   Small Phones
+========================================= */
+
+@media (max-width:480px){
+
+    .logo{
+
+        font-size:1.2rem;
+
+    }
+
+    .theme-btn{
+
+        width:42px;
+
+        height:42px;
+
+    }
+
+    .badge{
+
+        font-size:.85rem;
+
+    }
+
+    .hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .hero h2{
+
+        font-size:1.05rem;
+
+    }
+
+    .section-header h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .card{
+
+        padding:22px;
+
+    }
+
+}
