@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Adam | Personal Dashboard</title>
+
+    <meta name="description"
+          content="Modern personal dashboard by Adam.">
+
+    <meta name="author"
+          content="Adam">
+
+    <meta name="theme-color"
+          content="#3b82f6">
+
+    <meta property="og:title"
+          content="Adam | Personal Dashboard">
+
+    <meta property="og:description"
+          content="Modern personal dashboard.">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:image"
+          content="assets/og-image.png">
+
+    <link rel="icon"
+          href="assets/favicon.ico">
+
+    <link rel="manifest"
+          href="site.webmanifest">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/websites.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================
+         Loader
+    =========================== -->
+
+    <div id="loader">
+
+        <div class="loader-logo">
+
+            Adam
+
+        </div>
+
+        <div class="loader-ring"></div>
+
+        <div class="loader-text">
+
+            Loading dashboard...
+
+        </div>
+
+    </div>
+
+    <!-- ==========================
+         Header
+    =========================== -->
+
+    <header class="header">
+
+        <a href="#hero"
+           class="logo">
+
+            Adam
+
+        </a>
+
+        <nav>
+
+            <a href="#hero"
+               class="active">
+
+                Home
+
+            </a>
+
+            <a href="#about">
+
+                About
+
+            </a>
+
+            <a href="#websites">
+
+                Websites
+
+            </a>
+
+            <a href="#contact">
+
+                Contact
+
+            </a>
+
+        </nav>
+
+        <button id="theme-toggle"
+                class="theme-btn"
+                aria-label="Toggle Theme">
+
+            🌙
+
+        </button>
+
+    </header>
+
+    <!-- ==========================
+         Hero
+    =========================== -->
+
+    <section id="hero"
+             class="hero">
+
+        <span class="badge">
+
+            🚀 Welcome to my dashboard
+
+        </span>
+
+        <h1>
+
+            Hi, I'm
+
+            <span id="hero-name"
+                  class="typing">
+
+                Adam
+
+            </span>
+
+            <span class="cursor">|</span>
+
+        </h1>
+
+        <h2 id="hero-title">
+
+            Web Enthusiast • Cyclist • Creator
+
+        </h2>
+
+        <p id="hero-description">
+
+            Welcome to my personal dashboard.
+            This website contains my personal websites,
+            projects, and future experiments.
+
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#websites"
+               class="btn">
+
+                Explore Websites
+
+            </a>
+
+            <a href="#about"
+               class="btn btn-outline">
+
+                Learn More
+
+            </a>
+
+        </div>
+
+        <div class="live-info">
+
+            <div class="live-card">
+
+                <span class="label">
+
+                    Local Time
+
+                </span>
+
+                <h3 id="live-clock">
+
+                    00:00:00
+
+                </h3>
+
+                <p id="live-date">
+
+                    Loading...
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         About
+    =========================== -->
+
+    <section id="about"
+             class="section">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                About
+
+            </span>
+
+            <h2>
+
+                About Me
+
+            </h2>
+
+        </div>
+
+        <div class="card-grid">
+
+            <div class="card">
+
+                <h3>
+
+                    👨 About Me
+
+                </h3>
+
+                <p>
+
+                    Passionate about creating clean,
+                    responsive, and lightweight websites
+                    with modern technologies.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    🚴 Hobby
+
+                </h3>
+
+                <p>
+
+                    Cycling is one of my favorite hobbies.
+                    I also enjoy exploring new technology
+                    and improving web performance.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    🎯 Goal
+
+                </h3>
+
+                <p>
+
+                    Build useful, beautiful, and fast
+                    websites while continuously learning
+                    new things.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         Websites
+    =========================== -->
+
+    <section id="websites"
+             class="section">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Websites
+
+            </span>
+
+            <h2>
+
+                My Websites
+
+            </h2>
+
+        </div>
+
+        <div id="website-list"
+             class="card-grid">
+            <!-- Website cards akan diisi otomatis oleh profile.js -->
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         Contact
+    =========================== -->
+
+    <section id="contact"
+             class="section">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Contact
+
+            </span>
+
+            <h2>
+
+                Let's Connect
+
+            </h2>
+
+            <p>
+
+                Visit my websites below and stay tuned for
+                future projects and updates.
+
+            </p>
+
+        </div>
+
+        <div class="card-grid">
+
+            <a href="https://kuromimaho.web.id"
+               class="card"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <h3>
+
+                    🌐 Main Website
+
+                </h3>
+
+                <p>
+
+                    kuromimaho.web.id
+
+                </p>
+
+            </a>
+
+            <a href="https://kuromaho.web.id"
+               class="card"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <h3>
+
+                    💡 Kuromaho
+
+                </h3>
+
+                <p>
+
+                    Creative experiments and ideas.
+
+                </p>
+
+            </a>
+
+            <a href="https://kuromiho.web.id"
+               class="card"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <h3>
+
+                    🚀 Kuromiho
+
+                </h3>
+
+                <p>
+
+                    Additional web projects.
+
+                </p>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         Footer
+    =========================== -->
+
+    <footer id="footer">
+
+        <div class="footer-content">
+
+            <h2>
+
+                Adam Personal Dashboard
+
+            </h2>
+
+            <p>
+
+                Built with HTML, CSS, and JavaScript.
+                Designed for GitHub Pages and custom domains.
+
+            </p>
+
+            <div class="footer-links">
+
+                <a href="https://kuromimaho.web.id"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Main Website
+
+                </a>
+
+                <a href="https://kuromaho.web.id"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Kuromaho
+
+                </a>
+
+                <a href="https://kuromiho.web.id"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Kuromiho
+
+                </a>
+
+            </div>
+
+            <p id="copyright">
+
+                © 2026 Adam. All rights reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ==========================
+         JavaScript
+    =========================== -->
+
+    <script src="scripts/loader.js"></script>
+
+    <script src="scripts/main.js"></script>
+
+    <script src="scripts/theme.js"></script>
+
+    <script src="scripts/typing.js"></script>
+
+    <script src="scripts/clock.js"></script>
+
+    <script src="scripts/profile.js"></script>
+
+    <script src="scripts/particles.js"></script>
+
+    <script src="scripts/scrollTop.js"></script>
+
+</body>
+
+</html>
