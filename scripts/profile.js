@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (!container) return;
 
-    try{
+    try {
 
         const response = await fetch("data/profile.json");
 
-        if(!response.ok){
+        if (!response.ok) {
 
             throw new Error("Failed to load profile.json");
 
@@ -26,19 +26,37 @@ document.addEventListener("DOMContentLoaded", async () => {
            Hero
         ========================================= */
 
-        if(heroName){
+        if (heroName) {
 
-            heroName.textContent = profile.name;
+            heroName.textContent = "";
+
+            let index = 0;
+
+            function type() {
+
+                if (index < profile.name.length) {
+
+                    heroName.textContent += profile.name.charAt(index);
+
+                    index++;
+
+                    setTimeout(type, 120);
+
+                }
+
+            }
+
+            type();
 
         }
 
-        if(heroTitle){
+        if (heroTitle) {
 
             heroTitle.textContent = profile.title;
 
         }
 
-        if(heroDescription){
+        if (heroDescription) {
 
             heroDescription.textContent = profile.description;
 
@@ -88,7 +106,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     }
 
-    catch(error){
+    catch (error) {
 
         console.error(error);
 
